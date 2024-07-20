@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Layout</title>
+    <link rel="stylesheet" href="../static/css/pred.css">
+</head>
+<body>
+    <div class="container">
+        <h2>World Happiness Survey</h2>
+        <form action="/result" method="POST">
+            <label for="gdp_per_capita">GDP per capita:</label><br>
+            <input type="number" id="gdp_per_capita" name="gdp_per_capita" step="any" required><br><br>
+            
+            <label for="social_support">Social support:</label><br>
+            <input type="number" id="social_support" name="social_support" step="any" required><br><br>
+            
+            <label for="healthy_life_expectancy">Healthy life expectancy:</label><br>
+            <input type="number" id="healthy_life_expectancy" name="healthy_life_expectancy" step="any" required><br><br>
+            
+            <label for="freedom_to_choose">Freedom to make life choices:</label><br>
+            <input type="number" id="freedom_to_choose" name="freedom_to_choose" step="any" required><br><br>
+            
+            <label for="generosity">Generosity:</label><br>
+            <input type="number" id="generosity" name="generosity" step="any" required><br><br>
+            
+            <label for="corruption_perception">Perceptions of corruption:</label><br>
+            <input type="number" id="corruption_perception" name="corruption_perception" step="any" required><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
